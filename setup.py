@@ -16,7 +16,7 @@ setup(
 
     entry_points = {
         'catkin_tools.jobs': [
-            'cargo = catkin_cargo.description'
+            'cargo = catkin_cargo:description'
         ]
     }
 )
