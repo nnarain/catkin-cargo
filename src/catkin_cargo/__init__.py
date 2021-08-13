@@ -18,7 +18,7 @@ def create_cargo_build_job(context, package, package_path, dependencies, **kwarg
     # create a cargo build command stage
     cargo_build_cmd = CommandStage(
         'cargo',
-        ['cargo', 'build'],
+        ['cargo', 'build', '--target-dir', build_space],
         cwd=pkg_dir,
         env=env,
         shell=True
